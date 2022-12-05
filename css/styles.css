@@ -80,8 +80,7 @@ body {
     color: #212121;
     text-decoration: none;
     padding-top: 32px;
-    padding-bottom: 32px;
-    
+    padding-bottom: 32px;   
 }
 .header .header-list-back {
     margin-right: 0;
@@ -108,9 +107,9 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.link-mailto a {
+/* .link-mailto a { */
     
-}
+
 .header a:hover,
 .header a:focus,
 .header a:active {
@@ -263,7 +262,7 @@ button .hero {
 }
 .icon-about {
     display: flex;
-    fill: #AFB1B8;: 
+    fill: #AFB1B8;
 }
 .about .list li {
     margin-right: 30px;
@@ -285,6 +284,16 @@ button .hero {
 .section-img li {
     padding-right: 30px;
 }
+.section-img h3 {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    text-align: center;
+    justify-content: center;
+}
+
+
 /* Чим займається кожен з команди */
 .section h2 {
     font-weight: 700;
@@ -307,10 +316,10 @@ button .hero {
     padding-top: 30px;
     margin-bottom: 10px;
 }
-.team .container {
+/* .team .container { */
     /* padding-top: 94px;
     padding-bottom: 94px; */
-}
+
 
 .list-team {
     font-size: 16px;
@@ -598,9 +607,9 @@ button .hero {
     text-align: left;
     margin-right: 60px;
 }
-.contaainer-right {
-    /* align-items: baseline; */
-}
+/* .contaainer-right {
+    align-items: baseline;
+} */
 .footer-rigth-title{
     font-weight: 700;
     font-size: 14px;
