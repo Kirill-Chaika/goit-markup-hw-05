@@ -416,6 +416,7 @@ button .hero {
     display: flex;
     justify-content: center;
     margin-right: 8px;
+    
 }
 .list-portfolio {
     flex-wrap: wrap;
@@ -425,6 +426,9 @@ button .hero {
 .list-portfolio .llist-portfolio-cards:focus {
     /* border: 1px solid #EEEEEE; */
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.some-item-container {
+    position: relative;
 }
 .headlines {
     font-size: 18px;
@@ -446,9 +450,22 @@ button .hero {
     /* border-top: 0; */
 }
 .list-portfolio-link {
-    position: relative;
+    position: absolute;
     width: 370px;
+    height: 294px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    background: transparent;
+    transform: translateY(10000px);
 }
+.list-portfolio .list-portfolio-cards:hover  {
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(-10000px)
+}
+
 .list-portfolio-link p {
     font-weight: 400;
     font-size: 18px;
