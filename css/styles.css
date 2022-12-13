@@ -67,6 +67,7 @@ body {
     display: flex;
     align-items: center;
     background-color: var(--text-color);
+    
 }
 .header li {
     /* margin-right: 50px; */
@@ -75,6 +76,7 @@ body {
 .header-animation {
     position: relative;
     bottom: 0;
+    
 }
 .header a {
     font-weight: 500;
@@ -85,7 +87,7 @@ body {
     text-decoration: none;
     padding-top: 32px;
     padding-bottom: 28px;
-    
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header .header-list-back {
@@ -107,8 +109,7 @@ body {
     margin-right: 50px;
     
 }
-.header-animation:hover .header-link-border,
-.header-animation:focus .header-link-border {
+.header-animation:active .header-link-border {
     opacity: 1;
 }
  
@@ -150,6 +151,7 @@ body {
     color: #757575;
     text-decoration: none;
     display: flex;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .posted li {
     margin-right: 50px;
@@ -233,6 +235,7 @@ body {
     display: block;
     margin: 0 auto;
     padding: 10px 32px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 button .hero {
     padding: 10px;
@@ -314,7 +317,7 @@ button .hero {
     
     position: absolute;
 }
-.section-img .section-img-discription {
+.section-img p {
     position: relative;
     width: 370px;
     height: 70px;
@@ -325,9 +328,9 @@ button .hero {
     padding-right: 0;
     color: var(--text-color);
     transform: translateY(-68px);
-    
+    text-transform: uppercase;
 }
-.section-img .section-img-discription h3 {
+.section-img p {
     text-align: center;
     padding-top: 27px ;
 }
@@ -379,6 +382,7 @@ button .hero {
     cursor: pointer;
     background-color: #F5F4FA;
     padding: 6px 25px
+    
 }
 .container .hero-portfolio-link button {
     display: block;
@@ -387,6 +391,7 @@ button .hero {
     margin-right: 8px;
     border-radius: 4px;
     border: 0;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list li a{
@@ -445,9 +450,9 @@ button .hero {
     opacity: 1;
     background-color: rgba(33, 150, 243, 0.9);;
 }
-.some-item-thumb {
-    position: relative;
-    owerflow: hidden;
+.some-item-thumb  {
+    /* position: relative; */
+    
 
 }
 .headlines {
@@ -459,8 +464,10 @@ button .hero {
     padding-top: 20px;
 }
 .list-portfolio li a  {
+    position: relative;
     text-decoration: none;
     display: block;
+    owerflow: hidden;
 }
 
 .list-portfolio li a .container {
@@ -474,7 +481,7 @@ button .hero {
     
     position: absolute;
     display: flex;
-    top: 190%;
+    top: 197%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 370px;
@@ -483,8 +490,9 @@ button .hero {
     justify-content: center;
     padding-left: 24px;
     padding-right: 24px;
-    background: transparent;
-    opacity: 0;   
+    /* background: transparent; */
+    opacity: 0;
+    overflow: hidden ;   
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -534,8 +542,9 @@ button .hero {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #AFB1B8;
+    
     /* margin: 0 auto; */
 }
 .team .icon-team li {
@@ -588,8 +597,9 @@ button .hero {
     align-items: center;
     justify-content: center;
     fill: #AFB1B8;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     /* padding: 16px 32px; */
-
+    
 }
 
 .regular-customers ul li:nth-last-child(1) {
@@ -712,7 +722,8 @@ button .hero {
     margin-right: 10px;
     fill: var(--text-color);
     background: 50% 50%;
-        background-image: url(../images-2/Ellipse-2.svg);
+    background-image: url(../images-2/Ellipse-2.svg);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container-right .icon-team a:hover,
@@ -752,14 +763,18 @@ button .hero {
 
 }
 .modal-close {
-    position: absolute;
     top: 34%;
     left: 63%;
     transform: translate(-50%, -50%);
 }
-.modal-close button {
-
+.modal button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    border-radius: 50%;
+    align-items: center;
 }
