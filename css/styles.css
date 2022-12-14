@@ -109,7 +109,7 @@ body {
     margin-right: 50px;
     
 }
-.header-animation:active .header-link-border {
+.header-animation:hover .header-link-border {
     opacity: 1;
 }
  
@@ -127,9 +127,7 @@ body {
     margin-left: 12px;
     align-items: center;
 }
-.auth-nav .header .links:active {
-    color: #2196F3;
-}
+
 .posted a {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -138,11 +136,12 @@ body {
     
 
 .header a:hover,
-.header a:focus,
-.header a:active {
+.header a:focus {
     color:var(--brand-color);
 }
-
+.header a:active .header-link-border{
+    opacity: 1;
+}
 .posted a {
     font-weight: 500;
     font-size: 14px;
