@@ -191,6 +191,13 @@ body {
     fill: currentColor;
 }
 
+.current::after {
+    content: '';
+    display: block;
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--brand-color);   
+}
 
 
 
@@ -466,7 +473,7 @@ button .hero {
     position: relative;
     text-decoration: none;
     display: block;
-    owerflow: hidden;
+    overflow: hidden;
 }
 
 .list-portfolio li a .container {
@@ -501,7 +508,7 @@ button .hero {
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.03em;
-    color: #110808f9;
+    color: #FFFFFF;
 }
 .section .container {
     padding-top: 0;
@@ -777,3 +784,4 @@ button .hero {
     border-radius: 50%;
     align-items: center;
 }
+
