@@ -176,7 +176,7 @@ body {
     /* fill: var(--brand-color); */
 }
 
-.posted .posted-icon{
+.posted .posted-icon {
     display: block;
     align-self: center;
     margin-right: 10px;
